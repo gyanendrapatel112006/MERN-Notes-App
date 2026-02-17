@@ -1,0 +1,16 @@
+{
+  "name": "notes-taking-app",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "npm start --prefix backend",
+    "dev:frontend": "npm run dev --prefix my-project"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "lucide-react": "^0.564.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
